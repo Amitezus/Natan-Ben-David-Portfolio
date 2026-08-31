@@ -726,7 +726,7 @@ function applyStatic(){
   $$('[data-i18n]').forEach(function(n){ n.textContent = t(C.ui[n.dataset.i18n]); });
   $$('.langtoggle__opt').forEach(function(o){ o.classList.toggle('on', (o.dataset.lang === 'he') === (L === 1)); });
   document.title = L === 1
-    ? 'נתן בן־דוד - מעצב תקשורת חזותית'
+    ? 'נתן בן-דוד - מעצב תקשורת חזותית'
     : 'Natan Ben-David - Visual Communication Designer';
 }
 

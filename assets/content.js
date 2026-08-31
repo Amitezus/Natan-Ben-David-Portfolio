@@ -9,11 +9,11 @@ var C = {};
    UI strings
    --------------------------------------------------------- */
 C.ui = {
-  brand:      ['Natan Ben-David', 'נתן בן־דוד'],
+  brand:      ['Natan Ben-David', 'נתן בן-דוד'],
   role:       ['Visual Communication Designer', 'מעצב תקשורת חזותית'],
   boot:       ['graphics is applied psychology - in every medium it appears in',
                'גרפיקה היא פסיכולוגיה יישומית - בכל מדיום שהיא מופיעה בו'],
-  heroTitle:  ['I’m Natan Ben-David.', 'נתן בן־דוד.'],
+  heroTitle:  ['I’m Natan Ben-David.', 'נתן בן-דוד.'],
   heroSub:    ['Branding and print, video and motion, product and interface. Different media, one question: what a person will notice, understand and remember.',
                'מיתוג ודפוס, וידאו ומוֹשן, מוצר וממשק. מדיומים שונים, שאלה אחת: מה אדם ישים לב אליו, יבין ויזכור.'],
   heroMeta1:  ['Brand & print', 'מיתוג ודפוס'],
