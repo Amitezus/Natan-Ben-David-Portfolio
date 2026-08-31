@@ -65,9 +65,9 @@
   --amber:      #f2ac16;
   --void:       #17110f;
 
-  --sans: 'Funnel Display', 'Assistant', system-ui, sans-serif;
-  --serif:'Merriweather', 'Heebo', Georgia, serif;
-  --ui:   'Exo', 'Assistant', system-ui, sans-serif;
+  --sans: 'Funnel Display', 'IBM Plex Sans Hebrew', system-ui, sans-serif;
+  --serif:'Merriweather', 'IBM Plex Sans Hebrew', Georgia, serif;
+  --ui:   'Exo', 'IBM Plex Sans Hebrew', system-ui, sans-serif;
 
   --bar:  var(--sp-16);   /* 64px — no icon anymore, just the name and nav */
   --gut:  clamp(20px, 4vw, 64px);
@@ -77,9 +77,9 @@
   --ease: cubic-bezier(.16,.84,.34,1);
 }
 html[lang="he"]{
-  --sans: 'Assistant', 'Funnel Display', system-ui, sans-serif;
-  --serif:'Heebo', 'Assistant', system-ui, sans-serif;
-  --ui:   'Assistant', 'Exo', system-ui, sans-serif;
+  --sans: 'IBM Plex Sans Hebrew', 'Funnel Display', system-ui, sans-serif;
+  --serif:'IBM Plex Sans Hebrew', system-ui, sans-serif;
+  --ui:   'IBM Plex Sans Hebrew', 'Exo', system-ui, sans-serif;
 
   /* Hebrew has no ascenders, descenders or capitals to help the eye, so the
      small sizes that read fine in Latin are genuinely too small here.
