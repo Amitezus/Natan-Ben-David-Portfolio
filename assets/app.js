@@ -567,6 +567,7 @@ document.addEventListener('keydown', function(e){
   if (e.key === 'Escape'){
     if (lb.classList.contains('open')) return closeLightbox();
     if (readerEl.classList.contains('open')) return closeReader();
+    if (navPanel.classList.contains('open')) return closeNavPanel();
   }
 });
 
@@ -591,7 +592,7 @@ function onScroll(){
       if (r.top <= mid && r.bottom > 0) best = s;
     });
     var key = best ? best.dataset.chapter : 'hero';
-    $$('.nav a').forEach(function(a){ a.classList.toggle('on', a.dataset.target === key); });
+    $$('.nav a, .navpanel__list a').forEach(function(a){ a.classList.toggle('on', a.dataset.target === key); });
     sweepStreams();
   });
 }
@@ -661,13 +662,43 @@ window.addEventListener('resize', onScroll);
    ========================================================= */
 function buildNav(){
   var nav = $('#nav'); nav.innerHTML = '';
-  C.sections.forEach(function(sec){
+  var panel = $('#navPanelList'); panel.innerHTML = '';
+  C.sections.forEach(function(sec, i){
     var a = el('a', null, t(C.ui.chapters[sec.id]));
     a.href = '#sec-' + sec.id;
     a.dataset.target = sec.id;
     nav.appendChild(a);
+
+    /* the phone dropdown reuses the exact same links — same targets, same
+       active-section highlighting — just laid out as a tall list instead of
+       a row, and it closes itself once one is picked */
+    var pa = el('a', null,
+      '<span>' + t(C.ui.chapters[sec.id]) + '</span>' +
+      '<span class="navpanel__n">' + (i + 1 < 10 ? '0' : '') + (i + 1) + '</span>');
+    pa.href = '#sec-' + sec.id;
+    pa.dataset.target = sec.id;
+    pa.addEventListener('click', closeNavPanel);
+    panel.appendChild(pa);
   });
 }
+
+/* ---------------------------------------------------------
+   mobile nav toggle
+   --------------------------------------------------------- */
+var navToggle = $('#navToggle'), navPanel = $('#navPanel');
+function openNavPanel(){
+  navToggle.classList.add('open'); navToggle.setAttribute('aria-expanded', 'true');
+  navPanel.classList.add('open'); navPanel.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('locked');
+}
+function closeNavPanel(){
+  navToggle.classList.remove('open'); navToggle.setAttribute('aria-expanded', 'false');
+  navPanel.classList.remove('open'); navPanel.setAttribute('aria-hidden', 'true');
+  if (!readerEl.classList.contains('open')) document.body.classList.remove('locked');
+}
+navToggle.addEventListener('click', function(){
+  if (navPanel.classList.contains('open')) closeNavPanel(); else openNavPanel();
+});
 
 function buildHeroIndex(){
   var host = $('#heroIndex'); if (!host) return;
@@ -699,7 +730,7 @@ function applyStatic(){
     : 'Natan Ben-David — Visual Communication Designer';
 }
 
-function render(){
+function render(skipScroll){
   GEN++; live = 0; setLive(); resetQueue();
   document.documentElement.lang = L === 1 ? 'he' : 'en';
   document.documentElement.dir  = L === 1 ? 'rtl' : 'ltr';
@@ -731,10 +762,17 @@ function render(){
   ht.dataset.stream = 'chars'; hs.dataset.stream = 'words';
   setTimeout(function(){ enqueue(ht); enqueue(hs); }, RM ? 0 : 500);
 
-  onScroll();
+  /* a language switch repositions the scroll right after this call — running
+     the sweep here would read layout at the OLD scroll position against the
+     BRAND-NEW document (different text length, different section heights),
+     which could wrongly mark an as-yet-unseen block "already scrolled past"
+     and skip its animation for good. The caller runs the sweep itself once
+     the real, final scroll position is set. */
+  if (!skipScroll) onScroll();
 }
 
 $('#langToggle').addEventListener('click', function(){
+  closeNavPanel();
   var anchor = null, mid = window.innerHeight * 0.42;
   $$('[data-chapter]').forEach(function(s){
     var r = s.getBoundingClientRect();
@@ -746,13 +784,14 @@ $('#langToggle').addEventListener('click', function(){
   L = L === 1 ? 0 : 1;
   try { localStorage.setItem('nbd-lang', L === 1 ? 'he' : 'en'); } catch(e){}
 
-  render();
+  render(true);
 
   if (anchor){
     var target = document.getElementById('sec-' + anchor);
     if (target) target.scrollIntoView({ behavior:'auto', block:'start' });
   }
   if (wasOpen && openId) renderReader(openId, true);
+  onScroll();   /* now sweeps at the real, final scroll position */
 });
 
 /* =========================================================

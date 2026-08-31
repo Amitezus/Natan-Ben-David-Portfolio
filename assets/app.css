@@ -170,6 +170,45 @@ html[lang="he"] .nav a{ letter-spacing:.04em; }
 .nav a:hover{ color:var(--ink); background:var(--paper-3); }
 .nav a.on{ color:var(--accent); }
 
+/* ---------- mobile navigation: hamburger + dropdown panel ----------
+   Below the breakpoint the horizontal .nav row has nowhere left to go
+   (brand name, links and the language toggle all fight for one line), so
+   it's replaced by a button that opens a full-width dropdown list instead. */
+.navtoggle{
+  display:none; flex:none; width:40px; height:40px; margin-inline-start:auto;
+  align-items:center; justify-content:center; gap:5px; flex-direction:column;
+  border-radius:var(--r); transition:background .25s;
+}
+.navtoggle:hover{ background:var(--paper-3); }
+.navtoggle__bar{
+  display:block; width:20px; height:1.5px; background:var(--ink); flex:none;
+  transition:transform .3s var(--ease), opacity .2s var(--ease);
+}
+.navtoggle.open .navtoggle__bar:nth-child(1){ transform:translateY(6.5px) rotate(45deg); }
+.navtoggle.open .navtoggle__bar:nth-child(2){ opacity:0; }
+.navtoggle.open .navtoggle__bar:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
+
+.navpanel{
+  position:fixed; inset-block-start:var(--bar); inset-inline:0; inset-block-end:0; z-index:92;
+  background:var(--paper); border-block-start:1px solid var(--line); overflow-y:auto;
+  opacity:0; visibility:hidden; transform:translateY(-8px);
+  transition:opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
+}
+.navpanel.open{ opacity:1; visibility:visible; transform:none; }
+.navpanel__list{ display:flex; flex-direction:column; padding:var(--sp-6) var(--gut) var(--sp-16); }
+.navpanel__list a{
+  display:flex; align-items:baseline; justify-content:space-between; gap:var(--sp-4);
+  padding:var(--sp-5) 0; border-block-end:1px solid var(--line);
+  font-family:var(--sans); font-weight:500; letter-spacing:-.015em;
+  font-size:var(--t-h3); line-height:var(--lh-h3); color:var(--ink);
+  transition:color .25s;
+}
+html[lang="he"] .navpanel__list a{ letter-spacing:normal; }
+.navpanel__list a:first-child{ padding-block-start:0; }
+.navpanel__list a:hover, .navpanel__list a.on{ color:var(--accent); }
+.navpanel__list a .navpanel__n{ flex:none; font-family:var(--ui); font-size:var(--t-micro); color:var(--ink-3); }
+.navpanel__list a.on .navpanel__n{ color:var(--accent); }
+
 /* language toggle — physically pinned, never mirrors, never resizes.
    Its own labels ("EN" / עב") never change, so its size must not depend on
    --t-micro, which IS redefined per language for every other label on the page. */
@@ -547,6 +586,8 @@ html[lang="he"] .brand__name{ letter-spacing:normal; }
   .masonry, .masonry.m4{ columns:2; }
   .masonry.m2{ columns:1; }
   .tl{ grid-template-columns:1fr; gap:var(--sp-4); }
+  .nav{ display:none; }
+  .navtoggle{ display:flex; }
 }
 @media (max-width:520px){
   .reel{ grid-column:span 6; }

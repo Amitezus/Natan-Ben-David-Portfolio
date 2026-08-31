@@ -62,14 +62,14 @@ C.sections = [
     title:  ['I solve problems in visual communication.',
              'פותר בעיות בתקשורת חזותית.'],
     blocks: [
-      ['lead', ['Every medium of visual communication comes down to the same question: what a person will notice, what they will understand, and what stays with them afterwards. Graphics is applied psychology. That is the thread through all of it.',
-                'כל מדיום של תקשורת חזותית מסתכם באותה שאלה: למה אדם ישים לב, מה הוא יבין, ומה יישאר איתו אחר כך. גרפיקה היא פסיכולוגיה יישומית. זה החוט שעובר בכל תחומי העבודה.']],
-      ['p', ['I built the toolbox in order. First branding, print and image — the discipline of making a single still frame carry an idea. Then video and motion, where the same idea has to survive time and movement. Then product design, where it has to survive a person actually using it.',
-             'בניתי את ארגז הכלים לפי הסדר. קודם מיתוג, דפוס ותמונה — המשמעת של להעמיס רעיון על פריים אחד סטטי. אחר כך וידאו ומוֹשן, שבהם אותו רעיון צריך להישאר ברור לאורך זמן ותנועה. ואז עיצוב מוצר, שבו הוא צריך להמשיך לעבוד בשביל אדם שבאמת משתמש בו.']],
-      ['p', ['The range is the point. A brand that has to hold on a bottle, on a stand at an exhibition, in a broadcast overlay and on a product screen is one problem, not four — and I can carry it through all of them without handing it off halfway.',
-             'הטווח הוא העיקר. מותג שצריך להחזיק על בקבוק, על דוכן בתערוכה, בשכבת שידור ועל מסך מוצר — זו בעיה אחת, לא ארבע — וההובלה שלו יכולה להישאר אחת, מקצה לקצה, בלי מסירה באמצע.']],
-      ['p', ['What I’m working on now is method. I build AI into the workflow itself — content pipelines, asset generation, scripting — not to replace the judgement, but to shorten the distance between a client’s brief and something precise enough to react to, and to shape that flow around how each client actually works.',
-             'היום המוקד הוא המתודה: שילוב בינה מלאכותית בתוך תהליך העבודה עצמו — פייפליינים של תוכן, ייצור נכסים וסקריפטים — לא כדי להחליף שיקול דעת, אלא כדי לקצר את המרחק בין בריף של לקוח לבין משהו מדויק מספיק כדי להגיב אליו, ולעצב את הפלואו סביב האופן שבו כל לקוח באמת עובד.']],
+      ['lead', ['Every piece of visual communication starts with the same question: what will people notice, what will they understand, and what will stay with them afterward. That’s my starting point. Design isn’t just how something looks — it’s how it works.',
+                'כל תקשורת חזותית מתחילה באותה שאלה: למה אנשים ישימו לב, מה הם יבינו, ומה יישאר איתם אחר כך. זו נקודת המוצא שלי. עיצוב הוא לא רק איך משהו נראה — הוא איך הוא עובד.']],
+      ['p', ['I built my toolbox along the way: branding, print, photography and image; then video and motion; and later product design too. Each medium adds a different constraint, but the principle stays the same — take an idea and make it clear, precise and memorable.',
+             'בניתי את ארגז הכלים שלי לאורך הדרך: מיתוג, דפוס, צילום ותמונה; אחר כך וידאו ומושן; ובהמשך גם עיצוב מוצר. כל מדיום מוסיף מגבלה אחרת, אבל העיקרון נשאר זהה — לקחת רעיון ולהפוך אותו לברור, מדויק וזכיר.']],
+      ['p', ['The advantage is in the range. A brand that has to work on a bottle, at an exhibition stand, in a broadcast overlay and on a product screen isn’t four different problems. It’s one system, and it has to speak the same language at every touchpoint.',
+             'היתרון הוא בטווח. מותג שצריך לעבוד על בקבוק, בדוכן בתערוכה, בשכבת שידור ובמסך של מוצר הוא לא ארבע בעיות שונות. זו מערכת אחת, שצריכה לדבר באותה שפה בכל נקודת מגע.']],
+      ['p', ['Today my focus is method: building AI into the workflow itself — from content pipelines and asset production to scripting. Not to replace judgement, but to shorten the road from brief to result, produce faster, and build each client a workflow that fits how they actually work.',
+             'היום המוקד שלי הוא המתודה: שילוב בינה מלאכותית בתוך תהליך העבודה עצמו — מפייפליינים של תוכן וייצור נכסים ועד סקריפטים. לא כדי להחליף שיקול דעת, אלא כדי לקצר את הדרך מבריף לתוצאה, לייצר יותר מהר, ולבנות לכל לקוח תהליך עבודה שמתאים לאופן שבו הוא באמת עובד.']],
       ['stats']
     ]
   },
@@ -93,8 +93,8 @@ C.sections = [
     blocks: [
       ['p', ['Motion is a strategic tool, not a finishing touch. It captures attention, strengthens long-term memory, and uses motor encoding to make an interface easier to understand. In a live broadcast the eye is already busy — a well-placed movement in the periphery is the one signal biology cannot ignore, so I use it deliberately and sparingly.',
              'מוֹשן הוא כלי אסטרטגי, לא נגיעה אחרונה. הוא לוכד תשומת לב, מחזק זיכרון לטווח ארוך, ומשתמש בקידוד מוטורי כדי להפוך ממשק למובן יותר. בשידור חי העין כבר עסוקה — תנועה ממוקמת היטב בשדה ההיקפי היא האות היחיד שהביולוגיה לא מסוגלת להתעלם ממנו, ולכן היא נכנסת לתמונה בכוונה ובמשורה בלבד.']],
-      ['p', ['Broadcast graphics for the NBA, LaLiga, Serie A, ATP and the NFL; LED screen and billboard campaigns; product explainers; and one music video.',
-             'גרפיקת שידור ל־NBA, לה־ליגה, סרייה A, ATP וה־NFL; קמפיינים למסכי LED ולשילוט חוצות; סרטוני הסבר למוצר; וקליפ אחד.']],
+      ['p', ['Broadcast graphics for the Play Anywhere platform across LaLiga, Serie A, ATP and the NFL; a club membership game for beIN; and the product walkthroughs that shipped alongside them.',
+             'גרפיקת שידור לפלטפורמת Play Anywhere בלה־ליגה, בסרייה A, ב־ATP וב־NFL; משחק דרגות מועדון ל־beIN; וסרטוני הסבר למוצר שיצאו איתם לדרך.']],
       ['reels']
     ]
   },
@@ -113,8 +113,10 @@ C.sections = [
     kicker: ['05 · Personal', '05 · אישי'],
     title:  ['What I make for myself.', 'מרחב של שגשוג ויצירה.'],
     blocks: [
-      ['p', ['There is no craft in design that moves me as deeply as the study of form and light. My drawings often surprise me — I never plan how they will look. When I paint I don’t think about how I’m painting; it feels more like walking. I’m not the one creating. I’m allowing creation to happen.',
-             'אין מלאכה בעיצוב שנוגעת בי כמו חקר הצורה והאור. הרישומים מפתיעים לרוב — בלי תכנון מראש, בלי ידיעה מוקדמת איך הם ייראו בסוף. הציור מרגיש כמו הליכה: הגוף נע, והיד הולכת אחריו. זו לא יצירה שנשלטת — זו יצירה שמותר לה פשוט לקרות.']],
+      ['p', ['This is where it started. Long before product design or motion, drawing was the first language I had — the study of form and light shaped who I am today more than anything I learned afterward.',
+             'כאן הכול התחיל. עוד לפני עיצוב מוצר או מוֹשן, הציור היה השפה הראשונה שהייתה לי — חקר הצורה והאור עיצב את מי שאני היום, יותר מכל דבר שלמדתי אחר כך.']],
+      ['p', ['It never really left. It’s still the first place an idea goes to get checked, sketched out, and said in the oldest, most direct way there is — before any of it reaches a screen.',
+             'הוא אף פעם לא באמת עזב. הוא עדיין המקום הראשון שאליו הולך רעיון כדי להיבדק, להשתרטט, ולהיאמר בדרך העתיקה והישירה ביותר שיש — עוד לפני שהוא מגיע למסך.']],
       ['artstrip']
     ]
   },
@@ -161,12 +163,12 @@ C.timeline = [
     body:  ['Supported international B2B and B2C SaaS clients including Catch Media and Play Anywhere: management and investor decks in English, sales video, product design, and the architecture and upkeep of design systems that held visual consistency across the whole product. Daily English with clients and teams, close work with stakeholders and product managers, design hand-off to development and UI QA.',
             'ליווי לקוחות SaaS בינלאומיים ב־B2B וב־B2C, ובהם Catch Media ו־Play Anywhere: מצגות הנהלה ומשקיעים באנגלית, סרטוני מכירה, עיצוב מוצר, וארכיטקטורה ותחזוקה של מערכות עיצוב ששמרו על עקביות חזותית בכלל המוצר. אנגלית יומיומית מול לקוחות וצוותים, עבודה צמודה מול בעלי עניין ומנהלי מוצר, העברת עיצוב לפיתוח וביקורת איכות ממשק.'] },
   { years: '2018 – 2019',
-    role:  ['Marketing & product design', 'שיווק ומוצר'],
+    role:  ['UX Design', 'עיצוב UX'],
     org:   'IKAN MAAS',
-    body:  ['Design and definition of digital platforms for government organisations — the IDF History Museums network among them. User research, data-system development, and the technical specs and style guides that let other designers and developers carry the work forward.',
-            'עיצוב ואפיון פלטפורמות דיגיטליות עבור ארגונים ממשלתיים — ובהם רשת מוזיאוני מורשת צה״ל. מחקר משתמשים, פיתוח מערכות נתונים, והמפרטים הטכניים ומדריכי הסגנון שאפשרו למעצבים ולמפתחים אחרים להמשיך את העבודה.'] },
+    body:  ['Mainly UX design for the Israeli Ministry of Defense — the Museums Unit and the Families and Commemoration Division — the IDF History Museums platform among them. Alongside that, graphic work in video, branding and print production.',
+            'בעיקר עיצוב UX עבור משרד הביטחון — יחידת המוזיאונים ואגף משפחות והנצחה — ובהן פלטפורמת מוזיאוני מורשת צה״ל. לצד זה, עבודות גרפיות של וידאו, מיתוג והוצאה לדפוס.'] },
   { years: '2016 – 2018',
-    role:  ['Visual communication & illustration', 'תקשורת חזותית ואיור'],
+    role:  ['Graphic Designer & Illustrator', 'מעצב גרפי ומאייר'],
     org:   'Studio Gur',
     body:  ['Graphic language and exhibition materials for international conferences, CannaTech 2018 among them — roughly 700 participants from nearly 40 countries — from concept boards through to the interior visual language of the venue. Ran the full print production chain: files, press liaison, materials, proofs, production follow-up and signage installation. Designed advertising campaigns for television and outdoor.',
             'פיתוח שפה גרפית ועיצוב חומרי תערוכות לכנסים בינלאומיים, ובהם CannaTech 2018 — כ־700 משתתפים מכ־40 מדינות — מהצעת קונספטים ועד התאמת השפה החזותית לכלל עיצוב הפנים של הכנס. ניהול מלא של שרשרת הדפוס: קבצים, עבודה מול בתי דפוס, בחירת חומרים, בדיקת פרוּפים, מעקב ייצור והתקנות שילוט. עיצוב קמפיינים פרסומיים לטלוויזיה ולשילוט חוצות.'] },
