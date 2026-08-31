@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Natan Ben-David — Visual Communication Designer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Solving problems in visual communication — branding and print, video and motion, product and interface.">
+<meta property="og:title" content="Natan Ben-David — Visual Communication Designer">
+<meta property="og:description" content="Solving problems in visual communication — brand, motion and product.">
+<meta property="og:type" content="website">
+<link rel="shortcut icon" href="../images/favicon.jpg">
+<link rel="apple-touch-icon" href="../images/webclip.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Exo:wght@200;300;400;500;600&family=Assistant:wght@200..800&family=Heebo:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<!-- ================= fixed chrome ================= -->
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="rail" aria-hidden="true">
+  <div class="rail__track"><div class="rail__fill" id="railFill"></div></div>
+  <div class="rail__node" id="railNode"></div>
+</div>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top" aria-label="Natan Ben-David">
+    <span class="brand__name" data-i18n="brand"></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Sections"></nav>
+</header>
+
+<button class="langtoggle" id="langToggle" type="button" aria-label="Switch language">
+  <span class="langtoggle__opt" data-lang="en">EN</span>
+  <span class="langtoggle__sep"></span>
+  <span class="langtoggle__opt" data-lang="he">עב</span>
+</button>
+
+<!-- ================= page ================= -->
+<main id="top">
+
+  <!-- ---------- hero ---------- -->
+  <section class="hero" id="sec-hero" data-chapter="hero">
+    <div class="hero__grid">
+      <div class="hero__inner">
+        <p class="boot label"><span class="boot__pulse"></span><span data-i18n="boot"></span></p>
+        <h1 class="hero__title stream" data-stream="chars" data-i18n-stream="heroTitle"></h1>
+        <p class="hero__sub stream" data-stream="words" data-i18n-stream="heroSub"></p>
+        <div class="hero__meta label">
+          <span data-i18n="heroMeta1"></span>
+          <span class="sepdot"></span>
+          <span data-i18n="heroMeta2"></span>
+          <span class="sepdot"></span>
+          <span data-i18n="heroMeta3"></span>
+          <span class="sepdot"></span>
+          <span data-i18n="heroMeta4"></span>
+        </div>
+      </div>
+      <aside class="hero__index" id="heroIndex"></aside>
+    </div>
+    <div class="scrollcue label" aria-hidden="true"><span data-i18n="scrollCue"></span><i></i></div>
+  </section>
+
+  <div id="sections"></div>
+
+</main>
+
+<!-- ================= case study reader ================= -->
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="reader__chrome">
+    <div class="reader__crumb label"><span class="dot" id="statusDot"></span><span id="readerCrumb"></span></div>
+    <button class="reader__close" id="readerClose" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <div class="reader__progress"><i id="readerProgress"></i></div>
+  </div>
+  <div class="reader__scroll" id="readerScroll">
+    <article class="reader__body" id="readerBody"></article>
+    <div class="reader__nav" id="readerNav"></div>
+  </div>
+</div>
+
+<!-- ================= lightbox ================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true"><img id="lightboxImg" alt=""></div>
+
+<script src="assets/variants.js"></script>
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
