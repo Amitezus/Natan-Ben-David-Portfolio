@@ -59,8 +59,8 @@ C.sections = [
   {
     id: 'about',
     kicker: ['01 · Who', '01 · מי'],
-    title:  ['I solve problems in visual communication.',
-             'פותר בעיות בתקשורת חזותית.'],
+    title:  ['What do I do?<br>I solve problems in visual communication.',
+             'מה אני עושה?<br>פותר בעיות בתקשורת חזותית.'],
     blocks: [
       ['lead', ['Every piece of visual communication starts with the same question: what will people notice, what will they understand, and what will stay with them afterward. That’s my starting point. Design isn’t just how something looks - it’s how it works.',
                 'כל תקשורת חזותית מתחילה באותה שאלה: למה אנשים ישימו לב, מה הם יבינו, ומה יישאר איתם אחר כך. זו נקודת המוצא שלי. עיצוב הוא לא רק איך משהו נראה - הוא איך הוא עובד.']],
