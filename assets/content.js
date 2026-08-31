@@ -2,7 +2,7 @@
    Natan Ben-David — portfolio v2
    Every localised value is a pair: [ english, hebrew ]
    ========================================================= */
-var IMG = '../images/';
+var IMG = 'images/';
 var C = {};
 
 /* ---------------------------------------------------------
